@@ -1,0 +1,128 @@
+/* Footer.css */
+
+.footer {
+  background-color: #F5F5F5; /* Darker, sophisticated background */
+  color: #757575; /* Light text for contrast */
+  padding: 40px 20px; /* More vertical padding for space */
+  font-family: 'Arial', sans-serif; /* Clean, readable font */
+  position: relative; /* Needed for positioning the semicircle */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  /* Inward box shadow on the upper side only */
+  box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between; /* Space out copyright and social links */
+  align-items: center;
+  width: 70%;
+  max-width: 1200px; /* Max width for content to prevent stretching on large screens */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Gap between elements when wrapped */
+}
+
+.footer-left p {
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 0.95em; /* Slightly smaller font for copyright */
+  letter-spacing: 0.5px; /* A touch of letter spacing */
+  cursor: pointer;
+}
+
+.footer-left p:hover{
+    color: black;
+}
+
+.footer-right {
+  display: flex; /* Use flex for social links */
+  align-items: center;
+}
+
+.social-links {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px; /* Space between social icons */
+}
+
+.social-links li a {
+  color: #757575; /* Light color for icons */
+  font-size: 1.5em; /* Good size for icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  display: block; /* Ensures padding and transform work well */
+}
+
+.social-links li a:hover {
+  color: black; /* Accent color on hover */
+  transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+/* Semicircle Back-to-Top Button */
+.semicircle-container {
+  background-color: #F5F5F5; /* Striking color for visibility */
+  color: #757575; /* White icon */
+  width: 100px; /* Width of the semicircle */
+  height: 40px; /* Half of the width to form a semicircle */
+  border-top-left-radius: 60px; /* Creates the semicircle shape */
+  border-top-right-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: -30px; /* Position it above the footer */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+   box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.semicircle-container:hover {
+  /* background-color: #c0392b; Darker red on hover */
+  transform: translateX(-50%) translateY(-3px); /* Lift and slightly move on hover */
+}
+
+.semicircle-container i {
+  font-size: 1.2em; /* Size of the chevron icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px; /* Add some space above social links */
+  }
+
+  .semicircle-container {
+    width: 50px;
+    height: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    top: -25px;
+  }
+
+  .semicircle-container i {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .social-links li a {
+    font-size: 1.3em;
+  }
+}

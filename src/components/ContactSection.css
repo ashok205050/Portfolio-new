@@ -1,0 +1,216 @@
+/* Contact Section Styles */
+.contact-section {
+  padding: 20px 20px 60px 20px; /* Increased bottom padding */
+  background-color: #f0f2f5; /* Lighter, softer background */
+  color: #333;
+  text-align: center;
+  box-shadow: inset 0 6px 12px -5px rgba(0, 0, 0, 0.08); /* Softer inner shadow */
+}
+
+.contact-content {
+  max-width: 850px; /* Slightly wider content area */
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 3em; /* Slightly larger heading */
+  margin-bottom: 45px; /* Increased margin */
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.02em; /* Added letter spacing */
+}
+
+.contact-content h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px; /* Moved underline down */
+  width: 90px; /* Slightly wider underline */
+  height: 5px; /* Thicker underline */
+  background-color: #4CAF50; /* Changed to a more vibrant green */
+  border-radius: 3px;
+}
+
+.contact-content p {
+  font-size: 1.15em; /* Slightly larger paragraph text */
+  line-height: 1.7;
+  margin-bottom: 50px; /* Increased margin */
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555; /* Slightly darker paragraph color */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #ffffff;
+  padding: 50px; /* Increased padding */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); /* More pronounced, softer shadow */
+  text-align: center; /* Centered the content of the form, including the button */
+  margin-bottom: 60px;
+  border: 1px solid #eee; /* Subtle border for definition */
+}
+
+.form-group {
+  margin-bottom: 30px; /* Increased margin */
+  text-align: left; /* Aligned form group content to the left */
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.05em; /* Slightly larger label font */
+  color: #34495e;
+  margin-bottom: 10px; /* Increased margin */
+  font-weight: 700; /* Bolder labels */
+  text-transform: uppercase; /* Uppercase labels */
+  letter-spacing: 0.05em; /* Added letter spacing */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 18px; /* Increased padding */
+  border: 1px solid #ccc; /* Lighter border */
+  border-radius: 10px; /* More rounded input fields */
+  font-size: 1.05em; /* Slightly larger input font */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background transition */
+  background-color: #fdfdfd; /* Slightly off-white background for inputs */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50; /* Focus border matches new accent color */
+  box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.25); /* Larger, more prominent focus shadow */
+  background-color: #ffffff; /* White background on focus */
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px; /* Taller textarea */
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #4CAF50; /* Vibrant green background */
+  color: #ffffff; /* White text for contrast */
+  padding: 18px 45px; /* Increased padding */
+  border: none;
+  border-radius: 50px;
+  font-size: 1.15em; /* Slightly larger font */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* More prominent button shadow */
+  letter-spacing: 0.03em; /* Added letter spacing */
+}
+
+.submit-btn:hover {
+  background-color: #43A047; /* Darker green on hover */
+  transform: translateY(-4px); /* More pronounced lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 15px 60px 15px;
+  }
+
+  .contact-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 35px;
+  }
+
+  .contact-content h2::after {
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+  }
+
+  .contact-content p {
+    font-size: 1.05em;
+    margin-bottom: 35px;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.95em;
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 14px;
+    font-size: 0.95em;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    padding: 14px 30px;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content h2 {
+    font-size: 2em;
+  }
+
+  .contact-content p {
+    font-size: 0.95em;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    width: 100%; /* Full width button on small screens */
+  }
+}
+
+
+/* Add this to your ContactSection.css file */
+.message-box {
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.message-box.success {
+  background-color: #e6ffe6; /* Light green */
+  color: #28a745; /* Darker green */
+  border: 1px solid #28a745;
+}
+
+.message-box.error {
+  background-color: #ffe6e6; /* Light red */
+  color: #dc3545; /* Darker red */
+  border: 1px solid #dc3545;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

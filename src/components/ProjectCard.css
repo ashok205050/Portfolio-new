@@ -1,0 +1,112 @@
+/* ProjectCard.css */
+
+.project-card {
+  background-color: #f0f8ff; /* Light azure */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures image covers the area */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1; /* Allows description to take up available space */
+  margin-bottom: 20px;
+}
+
+.project-technologies {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Space between badges */
+}
+
+.tech-badge {
+  background-color: #d8f5fa; /* Lighter React blue */
+  color: #006064; /* Darker teal */
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid #b2ebf2;
+}
+
+.project-links {
+  margin-top: auto; /* Pushes links to the bottom */
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.project-links .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  flex: 1; /* Distribute space evenly */
+  text-align: center;
+}
+
+.live-btn {
+  background-color: #61dafb;
+  color: #2c3e50;
+  border: 1px solid #61dafb;
+}
+
+.live-btn:hover {
+  background-color: #4dc2ea;
+  transform: translateY(-2px);
+}
+
+.github-btn {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.github-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-links {
+    flex-direction: column; /* Stack buttons on very small screens */
+    gap: 10px;
+  }
+}
