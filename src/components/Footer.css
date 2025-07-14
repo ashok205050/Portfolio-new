@@ -48,7 +48,7 @@
   color: #757575;  
   font-size: 1.5em;  
   transition: color 0.3s ease, transform 0.3s ease;  
-  display: block; / 
+  display: block; 
 }
 
 .social-links li a:hover {
