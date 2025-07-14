@@ -1,6 +1,5 @@
-import React from 'react';
-import './ProjectsSection.css'; // Create this CSS file for styling
-import ProjectCard from './ProjectCard'; // We'll create this component next
+ import './ProjectsSection.css';  
+import ProjectCard from './ProjectCard';  
 
 const projectsData = [
   {
@@ -8,9 +7,9 @@ const projectsData = [
     title: 'E-commerce Store',
     description: 'A full-stack e-commerce platform featuring user authentication, product catalog, shopping cart, and order management.',
     technologies: ['React', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'Stripe'],
-    liveLink: 'https://your-ecommerce-demo.com', // Replace with your live demo link
-    githubLink: 'https://github.com/yourusername/ecommerce-repo', // Replace with your GitHub link
-    image: 'path/to/ecommerce-screenshot.jpg' // Optional: screenshot of your project
+    liveLink: 'https://your-ecommerce-demo.com',  
+    githubLink: 'https://github.com/yourusername/ecommerce-repo',  
+    image: 'path/to/ecommerce-screenshot.jpg' 
   },
   {
     id: 2,
@@ -30,8 +29,7 @@ const projectsData = [
     githubLink: 'https://github.com/yourusername/social-app-repo',
     image: 'path/to/socialapp-screenshot.jpg'
   },
-  // Add more projects as needed
-];
+ ];
 
 const ProjectsSection = () => {
   return (

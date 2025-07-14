@@ -1,32 +1,29 @@
-/* Footer.css */
-
 .footer {
-  background-color: #F5F5F5; /* Darker, sophisticated background */
-  color: #757575; /* Light text for contrast */
-  padding: 40px 20px; /* More vertical padding for space */
-  font-family: 'Arial', sans-serif; /* Clean, readable font */
-  position: relative; /* Needed for positioning the semicircle */
+  background-color: #F5F5F5;  
+  color: #757575; 
+  padding: 40px 20px; 
+  font-family: 'Arial', sans-serif;  
+  position: relative;  
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  /* Inward box shadow on the upper side only */
-  box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+  align-items: center; 
+   box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
 .footer-inner {
   display: flex;
-  justify-content: space-between; /* Space out copyright and social links */
+  justify-content: space-between; 
   align-items: center;
   width: 70%;
-  max-width: 1200px; /* Max width for content to prevent stretching on large screens */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  gap: 20px; /* Gap between elements when wrapped */
+  max-width: 1200px;  
+  flex-wrap: wrap; 
+  gap: 20px;  
 }
 
 .footer-left p {
-  margin: 0; /* Remove default paragraph margin */
-  font-size: 0.95em; /* Slightly smaller font for copyright */
-  letter-spacing: 0.5px; /* A touch of letter spacing */
+  margin: 0;  
+  font-size: 0.95em;  
+  letter-spacing: 0.5px;  
   cursor: pointer;
 }
 
@@ -35,69 +32,65 @@
 }
 
 .footer-right {
-  display: flex; /* Use flex for social links */
+  display: flex;  
   align-items: center;
 }
 
 .social-links {
-  list-style: none; /* Remove bullet points */
+  list-style: none;  
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 18px; /* Space between social icons */
+  gap: 18px;  
 }
 
 .social-links li a {
-  color: #757575; /* Light color for icons */
-  font-size: 1.5em; /* Good size for icons */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-  display: block; /* Ensures padding and transform work well */
+  color: #757575;  
+  font-size: 1.5em;  
+  transition: color 0.3s ease, transform 0.3s ease;  
+  display: block; / 
 }
 
 .social-links li a:hover {
-  color: black; /* Accent color on hover */
-  transform: translateY(-3px); /* Subtle lift effect on hover */
+  color: black;  
+  transform: translateY(-3px);  
 }
 
-/* Semicircle Back-to-Top Button */
-.semicircle-container {
-  background-color: #F5F5F5; /* Striking color for visibility */
-  color: #757575; /* White icon */
-  width: 100px; /* Width of the semicircle */
-  height: 40px; /* Half of the width to form a semicircle */
-  border-top-left-radius: 60px; /* Creates the semicircle shape */
+ .semicircle-container {
+  background-color: #F5F5F5;  
+  color: #757575;  
+  width: 100px; 
+  height: 40px;  
+  border-top-left-radius: 60px;  
   border-top-right-radius: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: absolute;
-  top: -30px; /* Position it above the footer */
+  position: absolute;  
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%);  
    box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 10;  
 }
 
 .semicircle-container:hover {
-  /* background-color: #c0392b; Darker red on hover */
-  transform: translateX(-50%) translateY(-3px); /* Lift and slightly move on hover */
+   transform: translateX(-50%) translateY(-3px); 
 }
 
 .semicircle-container i {
-  font-size: 1.2em; /* Size of the chevron icon */
+  font-size: 1.2em;  
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .footer-inner {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;  
     text-align: center;
   }
 
   .footer-right {
-    margin-top: 20px; /* Add some space above social links */
+    margin-top: 20px;  
   }
 
   .semicircle-container {

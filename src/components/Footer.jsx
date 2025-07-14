@@ -12,34 +12,31 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      {/* Semicircle container now acts as the back-to-top button */}
-      <div
+       <div
         className="semicircle-container"
         onClick={scrollToTop}
-        role="button" // Indicate that this div is interactive
-        tabIndex="0"  // Make it focusable for keyboard navigation
-        aria-label="Back to top" // Provide an accessible label
+        role="button" 
+        tabIndex="0"   
+        aria-label="Back to top"  
       >
-        <i className="fas fa-chevron-up"></i> {/* Font Awesome chevron up icon */}
+        <i className="fas fa-chevron-up"></i>  
       </div>
 
       <div className="footer-inner">
-        {/* Copyright on the left */}
-        <div className="footer-left">
+         <div className="footer-left">
           <p>&copy; {currentYear} Ashok Maurya</p>
         </div>
 
-        {/* Social links on the right */}
-        <div className="footer-right">
+         <div className="footer-right">
           <ul className="social-links">
             <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i className="fab fa-github"></i> {/* Font Awesome GitHub icon */}
+              <i className="fab fa-github"></i>  
             </a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i> {/* Font Awesome LinkedIn icon */}
+              <i className="fab fa-linkedin-in"></i> 
             </a></li>
             <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i className="fab fa-instagram"></i> {/* Font Awesome Twitter icon */}
+              <i className="fab fa-instagram"></i> 
             </a></li>
           </ul>
         </div>

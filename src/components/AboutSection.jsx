@@ -12,7 +12,6 @@ const AboutSection = () => {
           My journey into web development began with a deep curiosity about how technology can solve real-world problems and create seamless digital experiences. I'm committed to continuous learning and constantly explore new technologies and best practices to build high-quality, scalable solutions.
         </p>
 
-        {/* Skills Section */}
         <div className="skills-wrapper">
           <h3>Skills</h3>
           <div className="skills-grid">
