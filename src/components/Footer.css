@@ -34,6 +34,19 @@
 .footer-right {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.footer-contact a {
+  color: #757575;
+  font-size: 1.5em; 
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: block;
+}
+
+.footer-contact a:hover {
+  color: black;
+  transform: translateY(-3px);
 }
 
 .social-links {
@@ -92,6 +105,8 @@
 
   .footer-right {
     margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .semicircle-container {

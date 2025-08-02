@@ -17,11 +17,6 @@ const ProjectCard = ({ project }) => {
             Live Demo
           </a>
         )}
-        {project.githubLink && (
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn github-btn">
-            GitHub
-          </a>
-        )}
       </div>
     </div>
   );
